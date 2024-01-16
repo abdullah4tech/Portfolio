@@ -6,11 +6,12 @@
 }
 
 :root {
-  --sideBGColor: #040b14;
+  --sideBGColor: #395172;
   --themeColor: #06939f;
-  --iconBGColor: #2c2f3f;
+  --iconBGColor: #292e45;
   --textColor: #525252;
   --bgColor: #f7f7f7;
+  --bgimage: ;
 }
 
 header {
@@ -56,19 +57,19 @@ header .profile .social-icons a {
   transition: 0.4s;
 }
 
-header .profile .social-icons a:hover{
+header .profile .social-icons a:hover {
   background-color: var(--themeColor);
 }
 
-header nav{
+header nav {
   margin-top: 30px;
 }
 
-header nav ul li{
+header nav ul li {
   list-style: none;
 }
 
-header nav ul li a{
+header nav ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 7px 10px;
@@ -79,21 +80,21 @@ header nav ul li a{
   letter-spacing: 0.6px;
 }
 
-header nav ul li a i{
+header nav ul li a i {
   margin-right: 10px;
   font-size: 20px;
   transition: 0.4s;
 }
 
-header nav ul li a:hover i{
+header nav ul li a:hover i {
   color: var(--themeColor);
 }
 
-header nav ul li .active i{
+header nav ul li .active i {
   color: var(--themeColor);
 }
 
-header .footer{
+header .footer {
   text-align: center;
   background-color: var(--sideBGColor);
   width: 300px;
@@ -107,11 +108,11 @@ header .footer{
   transition: 0.4s;
 }
 
-header .footer p{
+header .footer p {
   color: var(--themeColor);
 }
 
-#MenuBtn{
+#MenuBtn {
   position: fixed;
   top: 25px;
   right: 25px;
@@ -128,9 +129,46 @@ header .footer p{
   z-index: 999;
 }
 
-@media only screen and (max-width: 1050px){
-  header{
-    left: 20%;
+@media only screen and (max-width: 1050px) {
+  header {
+    left: -300px;
   }
+  header .footer {
+    left: -300px;
+  }
+  #MenuBtn {
+    display: block;
+  }
+}
 
+.mobile-nav-active header{
+  left: 0;
+}
+
+.mobile-nav-active header .footer{
+  left: 0;
+}
+
+
+main{
+  margin-left: 300px;
+  background-color: var(--bgColor);
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1050px){
+  main{
+    margin-left: 0;
+  }
+}
+
+#home{
+  height: 100vh;
+  width: 100%;
+  background-image: url('./assets/');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
