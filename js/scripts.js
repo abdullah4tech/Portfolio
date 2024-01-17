@@ -14,4 +14,4 @@ let typing_effect = new Typed('.auto-input', {
     backSpeed: 100,
     backDelay: 2000,
     loop: true,
-});
+})
