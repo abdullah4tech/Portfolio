@@ -594,10 +594,13 @@ section div p {
   flex-basis: 50%;
 }
 
+#resume .resume-row .resume-cols .pro-exp h3{
+  margin-top: 20px;
+}
+
 #resume .resume-row .resume-cols .pro-exp .title {
   color: black;
   font-weight: 600;
-  font-style: italic;
 }
 
 #resume .resume-row .resume-cols .pro-exp .address {
@@ -659,6 +662,10 @@ section div p {
   position: relative;
 }
 
+#resume .resume-row .resume-cols .my-edu .school{
+  font-weight: 600;
+}
+
 #resume .resume-row .resume-cols .my-edu p {
   color: black;
 }
@@ -685,4 +692,72 @@ section div p {
   font-style: italic;
   margin: 15px 0;
   display: inline-block;
+}
+
+#resume .resume-row .resume-cols .pro-exp {
+  padding: 0 20px 0 20px;
+  border-left: 2px solid var(--themeColor);
+  position: relative;
+}
+
+#resume .resume-row .resume-cols .pro-exp::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  background-color: white;
+}
+
+#resume .resume-row .resume-cols .pro-exp .para{
+  color: black;
+}
+
+#resume .resume-row .resume-cols .pro-exp .para {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+#resume .resume-row .resume-cols .pro-exp ul li {
+  margin: 10px 0;
+  margin-left: 20px;
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#resume .resume-row .resume-cols .pro-exp .para {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+#resume .resume-row .resume-cols .pro-exp ul li {
+  margin: 10px 0;
+  margin-left: 20px;
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 820px){
+  #resume {
+    padding: 50px 15px;
+  }
+  
+  #resume .resume-row {
+    flex-direction: column;
+  }
+  
+  #resume .resume-row .resume-cols {
+    flex-basis: 100%;
+  }
 }
