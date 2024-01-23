@@ -30,16 +30,16 @@ Abdullah's skill set includes:
 
 - **Programming Languages:** JavaScript, Python, HTML, CSS
 - **Frameworks:** React, Vue.js, Flask
-- **Database:** MongoDB, MySQL
-- **Tools:** Git, VS Code, Docker
+- **Database:** MongoDB, MySQL, MSSQL Server
+- **Tools:** Git, VS Code, illustrator
 
 ## Projects 🚧
 
 Check out Abdullah's notable projects:
 
-1. **[Project Name 1](#)** - Description of Project 1 🚀
-2. **[Project Name 2](#)** - Description of Project 2 💡
-3. **[Project Name 3](#)** - Description of Project 3 🌐
+1. **[Registration System](#)** - Description of Project 1 🚀
+2. **[TodoList Management System](#)** - Description of Project 2 💡
+3. **[Notepad Application](#)** - Description of Project 3 🌐
 
 ## Contact 📬
 
