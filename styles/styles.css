@@ -398,6 +398,10 @@ section div p {
   border-radius: 30px;
 }
 
+#fact .divider{
+  margin-bottom: 15px;
+}
+
 #fact .fact-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -457,6 +461,10 @@ section div p {
   /* border-radius: 30px; */
 }
 
+#skill .divider{
+  margin-bottom: 15px;
+}
+
 #skill .skill-row {
   margin-top: 35px;
   display: grid;
@@ -506,6 +514,10 @@ section div p {
   padding: 70px 30px;
   background-color: white;
   border-radius: 30px;
+}
+
+#resume .divider{
+  margin-bottom: 15px;
 }
 
 
@@ -765,6 +777,9 @@ section div p {
   padding: 70px 30px;
 }
 
+#portfolio .divider{
+  margin-bottom: 15px;
+}
 #portfolio .port-row{
   margin-top: 50px;
   display: grid;
@@ -777,3 +792,73 @@ section div p {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
 }
+#portfolio .port-row .port-item .port-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+#portfolio .port-row .port-item .port-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--themeColor);
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: scale(0);
+  transition: 0.5s;
+  border-radius: 10px;
+  visibility: hidden;
+}
+#portfolio .port-row .port-item:hover .port-info{
+  transform: scale(1);
+  visibility: visible;
+}
+#portfolio .port-row .port-item .port-info h4{
+  color: var(--bgColor);
+  font-size: 25px;
+  font-weight: 600;
+}
+#portfolio .port-row .port-item .port-info h4 + p{
+  color: var(--bgColor);
+  font-size: 14px;
+}
+#portfolio .port-row .port-item .port-info a{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--bgColor);
+  border-radius: 50%;
+  color: var(--themeColor);
+  line-height: 46px;
+  transition: 0.4s;
+}
+#portfolio .port-row .port-item .port-info a:hover{
+  background-color: var(--sideBGColor);
+  color: var(--bgColor);
+}
+
+@media only screen and (max-width: 650px){
+  #portfolio{
+    padding: 50px 10px;
+  }
+  #portfolio .port-row{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  #portfolio .port-row{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+
