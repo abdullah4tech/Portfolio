@@ -862,3 +862,31 @@ section div p {
   }
 }
 
+#service{
+  padding: 70px 30px;
+}
+#service .service-row{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#service .service-row .service-box{
+  display: flex;
+  gap: 20px;
+}
+#service .service-row .ser-info p{
+  color: black;
+}
+#service .service-row .service-box .icon i{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  font-size: 22px;
+  line-height: 46px;
+  background-color: var(--themeColor);
+  color: var(--bgColor);
+  transition: 0.7s;
+  text-align: center;
+}
